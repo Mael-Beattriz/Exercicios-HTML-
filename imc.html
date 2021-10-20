@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Calculadora de IMC</title>
+</head>
+<body>
+<script language = "javascript">
+var pes, alt, imc;
+pes = parseFloat(window.prompt("Digite seu peso:"));
+alt = parseFloat(window.prompt("Digite sua altura (com '.'):"));
+imc = pes / ( alt ^ 2 );
+document.write("<h1> Seu IMC é de:" + imc + "</h1>");
+ 
+if ( imc < 20 )
+document.write ("<h1> Ah... Parece que você esta abaixo do peso </h1>");
+ 
+else if ( 20 <= imc < 25)
+ document.write ("<h1> Olha, você esta com o peso ideal, meus parabéns </h1>");
+ 
+ else
+ document.write ("<h1> Oh, infelizmente você está acima do peso, procure um medico, ele era te ajudar! </h1>");
+</script>
+</body>
+</html>
